@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BancodeDados.Model" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="BancodeDadosEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Passagem" EntityType="BancodeDados.Model.Passagem" />
+  </EntityContainer>
+  <EntityType Name="Passagem">
+    <Key>
+      <PropertyRef Name="id" />
+    </Key>
+    <Property Name="id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="nome_passageiro" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="data_passagem" Type="DateTime" Nullable="false" Precision="3" />
+    <Property Name="classe" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cidade_origem" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="cidade_destino" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="hora_voo" Type="Time" Nullable="false" Precision="7" />
+  </EntityType>
+</Schema>

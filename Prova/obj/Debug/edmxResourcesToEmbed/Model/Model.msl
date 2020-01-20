@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="BancodeDadosModelStoreContainer" CdmEntityContainer="BancodeDadosEntities">
+    <EntitySetMapping Name="Passagem">
+      <EntityTypeMapping TypeName="BancodeDados.Model.Passagem">
+        <MappingFragment StoreEntitySet="Passagem">
+          <ScalarProperty Name="hora_voo" ColumnName="hora_voo" />
+          <ScalarProperty Name="cidade_destino" ColumnName="cidade_destino" />
+          <ScalarProperty Name="cidade_origem" ColumnName="cidade_origem" />
+          <ScalarProperty Name="classe" ColumnName="classe" />
+          <ScalarProperty Name="data_passagem" ColumnName="data_passagem" />
+          <ScalarProperty Name="nome_passageiro" ColumnName="nome_passageiro" />
+          <ScalarProperty Name="id" ColumnName="id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>
